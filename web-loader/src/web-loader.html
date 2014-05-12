@@ -1,4 +1,4 @@
-<polymer-element name="web-loader" attributes="type">
+<polymer-element name="web-loader" attributes="type color">
   <template>
     <template id="dot" if="{{type == 'dot'}}">
       <div class="loader6"></div>
@@ -22,7 +22,7 @@
           left: calc(50% - 6px);
 
           border-radius: 12px;
-          background-color: #95a5a6;
+          background-color: {{color}};
           -webkit-transform-origin:  50% 50%;
               transform-origin:  50% 50% ;
           -webkit-animation: loader6 1s ease-in-out infinite;
@@ -32,7 +32,7 @@
         .loader6:before{
           content: "";
           position: absolute;
-          background-color: #95a5a6;
+          background-color: {{color}};
           opacity: .5;
           top: 0px;
           left: -25px;
@@ -44,7 +44,7 @@
         .loader6:after{
           content: "";
           position: absolute;
-          background-color: #95a5a6;
+          background-color: {{color}};
           opacity: .5;
           top: 0px;
           left: 25px;
@@ -76,7 +76,7 @@
           height: 80px;
           width: 80px;
           border-radius: 80px;
-          border: 3px solid  #95a5a6;
+          border: 3px solid {{color}};
 
           top: 28%;
           top: -webkit-calc(50% - 43px);
@@ -99,7 +99,7 @@
           width: 11px;
           height: 11px;
           border-radius: 10px;
-          background-color: #95a5a6;
+          background-color: {{color}};
         }
 
         @-webkit-keyframes loader1{
@@ -116,7 +116,8 @@
   </template>
   <script>
     Polymer('web-loader', {
-      type: "circle"
+      type: "circle",
+      color: "#95a5a6"
     });
   </script>
 </polymer-element>
