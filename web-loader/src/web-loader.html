@@ -1,10 +1,15 @@
-<polymer-element name="web-loader" atribute="type">
+<polymer-element name="web-loader" attributes="type">
   <template>
-    <span>Hello <b>Web-Loader</b></span>
+    <template id="dot" if="{{type == 'dot'}}">
+      <span>Web Loader do tipo <em>"dot"</em></span>
+    </template>
+    <template id="cicle" if="{{type == 'circle'}}">
+      <span>Web Loader do tipo <em>"circle"</b></span>
+    </template>
   </template>
   <script>
     Polymer('web-loader', {
-      type: "circle"
+      type: ""
     });
   </script>
 </polymer-element>
