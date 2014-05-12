@@ -29,7 +29,7 @@ Web Component Loaders/Spinners in CSS3 [Web Loader] using Polymer.
 
 Attribute | Options         | Default                    | Description
 ---       | ---             | ---                        | ---
-`type`    | `circle`, `dot` |                            | The type of loader
+`type`    | `circle`, `dot` | `circle`                   | The type of loader
 `color`   | *hex*           | `#000000`                  | The color of loader
 
 ## Browser Support
