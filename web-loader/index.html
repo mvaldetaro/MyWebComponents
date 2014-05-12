@@ -3,15 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <title>&lt;web-loader&gt;</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
   <!-- Importing Web Component's Polyfill -->
   <script src="http://cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20130711/polymer.min.js"></script>
+
   <!-- Importing Custom Elements -->
   <link rel="import" href="src/web-loader.html">
+
+  <style>
+    body {
+      margin:0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+    #content {
+      width: 80%;
+      margin: 0 auto;
+    }
+    h2 {
+      font-weight: 300;
+    }
+    p {
+      font: normal 14px/23px 'Roboto', sans-serif;
+    }
+    pre {
+      padding: 10px;
+      display: block;
+      background: #ecf0f1;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Using Custom Elements -->
-  <web-loader type="circle"></web-loader>
-  <br><br>
-  <web-loader type="dot"></web-loader>
+  <div id="content">
+    <!-- Using Custom Elements -->
+    <h2>Exemplos da tag web-loader</h2>
+
+    <p>&lt;web-loader&gt; do tipo <em>"circle"</em></p>
+    <pre>&lt;web-loader type="circle"></pre>
+    <web-loader type="circle"></web-loader>
+    <br><hr><br>
+    <p>&lt;web-loader&gt; do tipo <em>"dot"</em></p>
+    <pre>&lt;web-loader type="circle"&gt;</pre>
+    <web-loader type="dot"></web-loader>
+  </div>
 </body>
 </html>
