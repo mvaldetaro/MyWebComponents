@@ -1,3 +1,6 @@
 [submodule "konami-code"]
 	path = konami-code
 	url = https://github.com/mvaldetaro/konami-code.git
+[submodule "web-loader"]
+	path = web-loader
+	url = https://github.com/mvaldetaro/web-loader.git
